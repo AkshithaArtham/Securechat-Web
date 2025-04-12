@@ -10,9 +10,6 @@ SecureChat Web is a secure messaging platform that enhances traditional end-to-e
 - 🔑 **Secret Code Protection**: Temporary decryption requires a **secret code** created during user registration.
 - 🛡️ **User-Centric Privacy**: Gives users control over which messages remain private, beyond standard E2E encryption.
 
-## 📸 Demo
-
-*(Include screenshots or GIFs of the platform here)*
 
 ## 🛠️ Tech Stack
 
@@ -32,7 +29,7 @@ SecureChat Web is a secure messaging platform that enhances traditional end-to-e
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/securechat-web.git
+git clone https://github.com/AkshithaArtham/securechat-web.git
 cd securechat-web
 
 # Install dependencies
