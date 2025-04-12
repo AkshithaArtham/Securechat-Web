@@ -1,22 +1,45 @@
-﻿## Build Chat App with React, Socket.io, Nodejs, Redux-Toolkit, MongoDB (2024)
+# 🔐 SecureChat Web
 
-![Alt text](Full%20Stack%20Chat%20App.png?raw=true "Title")
+SecureChat Web is a secure messaging platform that enhances traditional end-to-end encryption by introducing **message-level encryption**. It allows users to selectively encrypt specific messages using a special tag (`#msg#`) and converts them into fixed-length **emoji sequences**, ensuring confidentiality and protection against unauthorized access.
 
-Learn to build a real-time messaging Chat App using React, Socket.io, Node.js, Redux-Toolkit, and MongoDB. This tutorial series covers everything from setup to implementation, offering valuable insights and practical skills. Whether you're a beginner or an experienced developer, join us to take your React and Node.js expertise to the next level! Subscribe now and start building your own real-time messaging platform.
+## 🚀 Features
 
-# Server .env file
+- ✨ **Selective Message Encryption**: Users can tag messages using `#msg#` to encrypt only sensitive content.
+- 🔐 **Emoji-based Encryption**: Encrypted messages are converted into fixed-length emoji sequences for obfuscation.
+- ⏳ **Temporary Decryption**: Decrypted messages are displayed for **15 seconds** before auto-reverting to the encrypted form.
+- 🔑 **Secret Code Protection**: Temporary decryption requires a **secret code** created during user registration.
+- 🛡️ **User-Centric Privacy**: Gives users control over which messages remain private, beyond standard E2E encryption.
 
-FRONTEND_URL = <Frontend URL>
-MONGODB_URI  = <Mongodb URI>
-JWT_SECREAT_KEY = <JWT Secreat Key>
+## 📸 Demo
 
-# client .env file
+*(Include screenshots or GIFs of the platform here)*
 
-REACT_APP_CLOUDINARY_CLOUD_NAME = <Cloudinary cloud name>
-REACT_APP_BACKEND_URL = <Backend URL>
+## 🛠️ Tech Stack
 
-# Assets File
-Google Drive : https://drive.google.com/drive/folders/1mu6WFx63mlsbbwugdWgRGII_1YPruL00?usp=sharing 
+- **Frontend**: HTML, CSS, JavaScript (React)
+- **Backend**: Node.js / Java (Your choice based on implementation)
+- **Database**: MongoDB / SQL (depending on project setup)
+- **Security**: Custom emoji encryption, secret-code decryption mechanism
+
+## 📝 How It Works
+
+1. Users register and set a **secret code**.
+2. Messages tagged with `#msg#` are encrypted into emoji sequences.
+3. On receiving, a user can click “Decrypt”, enter the secret code, and view the decrypted message for **15 seconds**.
+4. After 15 seconds, the message reverts to its encrypted emoji form.
+
+## 🔧 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/securechat-web.git
+cd securechat-web
+
+# Install dependencies
+npm install
+
+# Run the app
+npm start
 
 
 
